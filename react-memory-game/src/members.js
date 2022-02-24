@@ -1,31 +1,31 @@
-const members [
+const members = [
   {
     name: "Chase",
-    img: "../img/Chase",
+    img: "../img/Chase"
   },
 
-   {
+  {
     name: "Everest",
-    img: "../img/Everest",
+    img: "../img/Everest"
   },
   {
     name: "Marshall",
-    img: "../img/Marshall",
+    img: "../img/Marshall"
   },
   {
     name: "Rocky",
-    img: "../img/Rocky",
+    img: "../img/Rocky"
   },
 
   {
     name: "Rubble",
-    img: "../img/Rubble",
+    img: "../img/Rubble"
   },
 
   {
     name: "Skye",
-    img: "../img/Skye",
+    img: "../img/Skye"
   },
-]
+];
 
 export default members;
