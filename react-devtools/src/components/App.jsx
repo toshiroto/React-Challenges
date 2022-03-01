@@ -3,7 +3,7 @@ import Card from "./Card";
 import contacts from "../contacts";
 
 function createCard(contact){
-  return  (
+  return  ( 
     <Card
     id={contact.id}
     key={contact.id}
