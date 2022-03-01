@@ -1,13 +1,14 @@
 import React from "react";
 import Entry from "./Entry";
-//1. Create Entry Component
+import emojipedia from "../emojipedia"
+
 //2. Craate Props to replace the hard coded data
 //3a. Import emojipedia <const></const>
 //3. Map through emojipedia array and render entry components
 
-function createTerm(emoji) {
+function createEntry(emoji) {
   return (
-    <Term
+    <Entry
     id={emoji.id}
     key={emoji.key}
     emoji={emoji.emoji}
@@ -25,10 +26,7 @@ function App() {
       </h1>
 
       <dl className="dictionary">
-      <Entry />
-      <Entry />
-      <Entry />
-
+     {emojipedia.map(createEntry)}
 
       </dl>
     </div>
