@@ -1,29 +1,15 @@
 import React from "react";
-import { render } from "react-dom";
+import Login from "./Login"
 
-let isLoggedIn = true
+let isLoggedIn = false
 
-function renderConditionally () {
-  if (isLoggedIn === false) {
-    return <h1>Hello</h1>
-  } else {
-    return (
-      <form className="form">
-        <input type="text" placeholder="Username" />
-        <input type="password" placeholder="Password" />
-        <button type="submit">Login</button>
-      </form>
-    )
-  }
-  }
 
 
 function App() {
   return (
-    <div className="container">
-    {renderConditionally()}
-
-    </div>
+    <div className="container">{
+    isLoggedIn ? <h1>Hello</h1> : <Login />
+    } </div>
   );
 }
 
